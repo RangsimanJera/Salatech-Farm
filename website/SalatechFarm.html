@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="salatech.css">
+    <link rel="shortcut icon" href="logo.png">
+    <link id="avast_os_ext_custom_font" href="chrome-extension://eofcbnmajmjmplflapaojjnihcjkigck/common/ui/fonts/fonts.css" rel="stylesheet" type="text/css">    
+    <title>Salatech Farm</title>
+    <meta name="description" content="Salatech Farm ฟาร์มอัจฉริยะ ส่วนหนึ่งของวิชาออกแบบและเทคโนโลยี ว 30181 โรงเรียนสวนกุหลาบวิทยาลัย" />
+    <meta name="robots" content="salatech farm" />
+    <meta property="og:url" content="https://salatechfarm-sk.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Salatech Farm | SK" />
+    <meta property="og:description" content="Salatech Farm ฟาร์มอัจฉริยะ ส่วนหนึ่งของวิชาออกแบบและเทคโนโลยี ว 30181 โรงเรียนสวนกุหลาบวิทยาลัย" />
+    <meta name="keywords" content="salatech, salatech farm, farm, smart farm, Salatech, Salatech Farm, salatech farm sk" />
+    <meta property="og:image" content="https://www.linkpicture.com/q/Salatech-Farm-og_1.png" />
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <div class="display" id="display">
+        <div class="alert" id="hide"><h5>Want to have a good experience?<nav onclick="full()">Press F11 to Full-screen</nav>or<nav onclick="hide()">hide</nav></h5></div>
+        <div class="alertmobile">
+            <div class="device"></div>
+            <h3>Please rotate your device!</h3>
+        </div>
+        <div class="alert mobiletext" id="hidemobile"><h5>Want to have a good experience?<nav onclick="full()">Tap to Full-screen</nav>or<nav onclick="hidemobile()">hide</nav></h5></div>
+        <section class="main">
+            <div class="content">
+                <img class="paper" id="paper" src="image/img/paper.png" alt="background 2D Mode">
+                <div class="postit" id="postit">
+                    <img src="image/img/postit.png" alt="2D Mode">
+                    <h3 id="postit-h3">2D</h3>
+                </div>                
+                <div class="postit postit2" id="postit2">
+                    <img src="image/img/postit2.png" alt="3D Mode">
+                    <h3 id="postit2-h3">3D</h3>
+                </div>
+                <div class="name">
+                    <img src="logo.png" alt="Salatech Farm logo">
+                    <h1>Salatech Farm</h1>
+                </div>
+                <div class="paragraph"  id="paragraph">
+                    <div class="pic" id="pic"></div>
+                    <div class="text">
+                        <h1>
+                            <span id="topic">ข้อมูลโดยรวม</span>
+                        </h1>
+                        <p>
+                            <span id="text">ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="show3d" id="show3d">
+                <img id="background" src="image/img/background.png" alt="background 3D Mode">
+                <div class='modelo-wrapper' id="modelo"> <div style="width: 100%; padding-bottom: 56.25%; position:
+                    relative"> <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe src="
+                    https://app.modelo.io/embedded/1483138878429622272?viewport=true&autoplay=true&autorotate=false&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false" style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
+                    allowfullscreen ></iframe> </div> </div> </div>
+            </div>    
+
+            <div class="model">
+                <div class="circle house"
+                    onmouseover="document.getElementById('topic').innerHTML='บ้าน';
+                        document.getElementById('text').innerHTML='เป็นที่อยู่อาศัย ชั้น 1 เปิดเป็นร้านขายผักและสลัด สำหรับผู้ต้องการซื้อปลีก';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/house.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="house">
+                    <img src="image/img/house.png" alt="house">
+                </div>
+
+                <div class="circle carpark"
+                    onmouseover="document.getElementById('topic').innerHTML='ลานจอดรถ';
+                        document.getElementById('text').innerHTML='ที่จอดรถสำหรับคนงาน และผู้เยี่ยมชม';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/car%20park.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="carpark">
+                    <img src="image/img/car park.png" alt="carpark">
+                </div>
+
+                <div class="circle storage"
+                    onmouseover="document.getElementById('topic').innerHTML='โกดังเก็บผัก';
+                        document.getElementById('text').innerHTML='สำหรับเก็บผลผลิต เตรียมจำหน่าย ขนส่งสินค้าเข้าออก';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/storage.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="storage">
+                    <img src="image/img/storage.png" alt="storage">
+                </div>
+
+                <div class="circle factory"
+                    onmouseover="document.getElementById('topic').innerHTML='ศูนย์ซ่อมบำรุง และโรงเก็บขยะ';
+                        document.getElementById('text').innerHTML='ดูแลระบบภายในฟาร์ม ซ่อมบำรุงรักษาหุ่นยนต์ ระบบ อุปกรณ์ต่างๆ และมีพื้นที่ส่วนหนึ่งเป็นโรงเก็บขยะ';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/factory.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="factory">
+                    <img src="image/img/factory.png" alt="factory">
+                </div>
+                
+                <div class="circle watertherapy"
+                    onmouseover="document.getElementById('topic').innerHTML='โรงบำบัดนำ้';
+                        document.getElementById('text').innerHTML='บำบัดนำ้จากอ่างเก็บนำ้ ก่อนนำไปใช้ภายในฟาร์ม';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/water%20therapy.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="watertherapy">
+                    <img src="image/img/water therapy.png" alt="water therapy">
+                </div>
+
+                <div class="circle compost"
+                    onmouseover="document.getElementById('topic').innerHTML='โรงหมักปุ๋ย และพื้นที่ผลิตไฟฟ้า';
+                        document.getElementById('text').innerHTML='หมักปุ๋ยจากซากสารอินทรีย์ เพื่อนำไปใช้ในการปลูกพืชต่อไป หลังคามีการติดตั้งแผงโซลาร์เซลล์ สำหรับผลิตไฟฟ้าเพื่อใช้ในฟาร์ม';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/compost.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="compost">
+                    <img src="image/img/compost.png" alt="composting plant">
+                </div>
+
+                <div class="circle reservoir"
+                    onmouseover="document.getElementById('topic').innerHTML='อ่างเก็บน้ำ';
+                        document.getElementById('text').innerHTML='ขนาด 4 ไร่ ลึก 5 เมตร มี shade balls เพื่อลดการระเหยของน้ำ และกันสิ่งสกปรก';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/reservoir.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="reservoir">
+                    <img src="image/img/reservoir.png" alt="reservoir">
+                </div>
+
+                <div class="circle walkpath"
+                    onmouseover="document.getElementById('topic').innerHTML='ทางเดิน';
+                        document.getElementById('text').innerHTML='ทางเดินสำหรับผู้มาเยี่ยมชม มีถังขยะระบบ Envac system และหุ่นยนต์ทำความสะอาดตามเส้นทางเดิน';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/walkpath.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="walkpath">
+                    <img src="image/img/walkpath.png" alt="pathway">
+                </div>
+
+                <div class="circle cabbage"
+                    onmouseover="document.getElementById('topic').innerHTML='กะหล่ำปลีเขียว';
+                        document.getElementById('text').innerHTML='พื้นที่ 3 ไร่ แบ่งพื้นที่ปลูกเป็น 4 ส่วน ปลูกได้ประมาณ 12,000 หัว';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/cabbage.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="cabbage">
+                    <img src="image/img/cabbage.png" alt="cabbage beds">
+                </div>
+                
+                <div class="circle corn"
+                    onmouseover="document.getElementById('topic').innerHTML='ข้าวโพดหวานเบอร์ใหญ่';
+                        document.getElementById('text').innerHTML='พื้นที่ 3 ไร่ แบ่งพื้นที่ปลูกเป็น 4 ส่วน ปลูกได้ประมาณ 28,650 ต้น';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/corn.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="corn">
+                    <img src="image/img/corn.png" alt="sweet corn beds">
+                </div>
+
+                <div class="circle tomato"
+                    onmouseover="document.getElementById('topic').innerHTML='มะเขือเทศเชอรี่';
+                        document.getElementById('text').innerHTML='พื้นที่ 3 ไร่ แบ่งพื้นที่ปลูกเป็น 3 ส่วน ปลูกได้ประมาณ 27,000 ต้น';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/tomato.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="tomato">
+                    <img src="image/img/tomato.png" alt="cherry tomato beds">
+                </div>
+
+                <div class="circle greenoak"
+                    onmouseover="document.getElementById('topic').innerHTML='กรีนโอ๊ค';
+                        document.getElementById('text').innerHTML='พื้นที่ 3 ไร่ แบ่งพื้นที่ปลูกเป็น 2 ส่วน ปลูกได้ประมาณ 43,200 ต้น';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/greenoak.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm gray.png'"
+                    onmouseout="document.getElementById('topic').innerHTML='ข้อมูลโดยรวม';
+                        document.getElementById('text').innerHTML='ฟาร์มของนายสมาร์ท ขนาดพื้นที่ 20 ไร่ ตั้งอยู่ที่ราบแม่น้ำ จังหวัดเชียงใหม่';
+                        document.getElementById('pic').style.backgroundImage='url(image/img/showpic/salatech\%20farm.png)';
+                        document.getElementById('salatech').src='image/img/salatech farm.png'"  
+                >
+                </div>
+                <div class="greenoak">
+                    <img src="image/img/greenoak.png" alt="green oak beds">
+                </div>
+
+                <div class="circleblock"></div>
+                <img src="image/img/salatech farm.png" alt="Salatech Farm" id="salatech">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.ondragstart = function () {
+            return false;
+        }; 
+        function disableselect(e){
+            return false
+        };
+        function reEnable(){
+            return true
+        };
+        //if IE4+
+            document.onselectstart=new Function ("return false")
+        //if NS6
+        if (window.sidebar){
+            document.onmousedown=disableselect
+            document.onclick=reEnable
+        }
+
+        var mode = 1;
+        const show = document.getElementById("show3d");
+        const background = document.getElementById("background");
+        const modelo = document.getElementById("modelo");
+        const postit = document.getElementById("postit");
+        const postit2 = document.getElementById("postit2");
+        const postitH3 = document.getElementById("postit-h3");
+        const postit2H3 = document.getElementById("postit2-h3");
+        const paper = document.getElementById("paper");
+        const paragraph = document.getElementById("paragraph");
+        
+        postit2.addEventListener('click', () => {
+            if (mode == 1) {
+                show.style.visibility = 'visible';
+                show.style.opacity = '1';
+                show.style.background = '#1d1d1f';
+                show.style.zIndex = '106';
+                background.style.opacity = '1';
+                background.style.right = '0';
+                modelo.style.opacity = '1';
+                modelo.style.zIndex = '107';
+                postit.style.left = '-60px'
+                postit2.style.left = '-75px'
+                postit.style.zIndex = '109';
+                postit2.style.zIndex = '108';
+                postitH3.innerHTML = '3D';
+                postit2H3.innerHTML = '2D';
+                paper.style.zIndex = '0';
+                paragraph.style.zIndex = '0';
+                mode = 2;
+            }
+            else {
+                show.style.visibility = 'hidden';
+                show.style.opacity = '0';
+                show.style.background = 'none';
+                show.style.zIndex = '0';
+                background.style.opacity = '0';
+                background.style.right = '100%';
+                modelo.style.opacity = '0';
+                modelo.style.zIndex = '0';
+                modelo.style.transition = '2s';
+                postit.style.left = '390px'
+                postit2.style.left = '375px'
+                postit.style.zIndex = '109';
+                postit2.style.zIndex = '104';
+                postitH3.innerHTML = '2D';
+                postit2H3.innerHTML = '3D';
+                paper.style.zIndex = '105';
+                paragraph.style.zIndex = '110';
+                mode = 1;
+            }
+        });
+        
+        function hide() {
+            document.getElementById("hide").style.visibility = 'hidden';
+            document.getElementById("hide").style.opacity = '0';
+        }
+        function hidemobile() {
+            document.getElementById("hidemobile").style.visibility = 'hidden';
+            document.getElementById("hidemobile").style.opacity = '0';
+        }
+        function full() {
+            document.getElementById('display').webkitRequestFullscreen();
+            document.getElementById("hidemobile").style.visibility = 'hidden';
+            document.getElementById("hidemobile").style.opacity = '0';
+        }
+
+    </script>
+</body>
+</html>
